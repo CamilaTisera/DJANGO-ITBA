@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Esta pagina es sobre nosotros</h2>
+
+{% endblock %}
+
+{% for client in data %}
+<h3>{{ client.name }}</h3>
+<p>{{ client.description }}</p>
+<p>{{ client.price }}</p>
+{% endfor %}
+
+{% block content %}
