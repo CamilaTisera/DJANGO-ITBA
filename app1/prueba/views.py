@@ -8,7 +8,7 @@ def home(request):
 
 def about(request):
     data = get_data()
-    return render(request, 'about.html')
+    return render(request, 'about.html', {'data':data})
 
 
 
