@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %} | ITBANK Portfolio de Proyecto</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'prueba/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'prueba/vendor/font-awesome/css/font-awesome-min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'prueba/css/clean-blog.min.css' %}">
+
+
+  <body>
+   <!--Navbar-->
+   <!--Fin Navbar-->
+   <!--Cabecera-->
+   <!--Fin Cabecera-->
+   <!--Contenido-->
+   {% block content %}
+{% endblock %}
+   <!--Fin Contenido-->
+   <!--Footer-->
+   <!--Fin Footer-->
+<!--Bootstrap core JavaScript-->
+<script src="{% static 'prueba/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'prueba/vendor/bootstrap/js/bootsrap.bundle.min.js' %}"></script>
+<!--Custom script for this template-->
+<script src="{% static 'prueba/js/clean-blog.min.js' %}"></script>
+
+
+</body>
+</html>
