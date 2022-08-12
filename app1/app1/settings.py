@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'prueba',
     'portafolio',
+    'contact',
 ]
 
 MIDDLEWARE = [

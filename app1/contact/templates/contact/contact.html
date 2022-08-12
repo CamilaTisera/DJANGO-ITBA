@@ -1,0 +1,32 @@
+{% extends "prueba/base.html" %}
+
+{% load static %}
+
+{% block title %} Contacto {% endblock %}
+
+{% block background %}{% static 'prueba/img/contact-bg.jpg' %} {% endblock %}
+
+{% block headers %}
+
+<h1> Contacto </h1>
+<span class="subheading">Envianos tus datos</span>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+        {% if 'ok' in request.GET %}
+        <p> Su mensaje se ha enviado correctamente</p>
+        {% endif %}
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <table>
+                    {{form.as_p}}
+                </table>
+                <input type="submit" value="Enviar">
+
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
