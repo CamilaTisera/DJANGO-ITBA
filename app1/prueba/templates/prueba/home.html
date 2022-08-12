@@ -12,4 +12,11 @@
 <span class="subheading">Bienvenido a la pagina de gestion de proyectos</span>
 {% endblock %}
 {% block content %}
+<p>Has visitado esta pagina {{num_visits}}
+    {% if num_visits == 1 %}
+    vez
+{% else %}
+veces
+{% endif %}
+</p>
 {% endblock %}

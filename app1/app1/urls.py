@@ -26,6 +26,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #agregar la url de contacto
     path('contact/', include('contact.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 if settings.DEBUG:
     from django.conf.urls.static import static
